@@ -16,14 +16,14 @@ public class Player extends Entity {
 
     private BufferedImage[][] animations;
     private int animationTick, animationIndex;
-    private int animationSpeed = 18;
+    private int animationSpeed = 25;
     private int playerAction = IDLE;
     private boolean moving = false, attacking = false;
     private boolean left, right, up, down;
     private float playerSpeed = 2.0f;
     private int[][] levelData;
     private float xDrawOffset = 21 * Game.SCALE;
-    private float yDrawOffset = 40 * Game.SCALE;
+    private float yDrawOffset = 4 * Game.SCALE;
 
     public Player(float x, float y, int width, int height) {
         super(x, y, width, height);
